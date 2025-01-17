@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class Register extends React.Component {
   constructor(props) {
     super(props);
@@ -9,6 +10,7 @@ class Register extends React.Component {
       name: ''
     }
   }
+
 
   onNameChange = (event) => {
     this.setState({name: event.target.value})
@@ -21,6 +23,11 @@ class Register extends React.Component {
   onPasswordChange = (event) => {
     this.setState({password: event.target.value})
   }
+
+
+
+
+
 
   onSubmitSignIn = () => {
     fetch('http://localhost:3000/register', {
